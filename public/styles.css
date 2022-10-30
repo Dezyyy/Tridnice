@@ -1,0 +1,44 @@
+
+@media screen and (min-width: 1000px){
+  
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  body{
+    background-color: antiquewhite;
+  }
+  .datumy{
+    display: inline-block;
+  }
+  td{
+    text-align: center;
+  }
+  table{
+    text-align: center;
+    margin: auto;
+  }
+
+  
+  .zapis{
+ margin-top: 40px;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 12px;
+    color: black;
+    display: inline-block;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+    
+  }
+  .odeslat{
+    height: 40px;
+    width: 70px;
+    margin-top: 30px;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  

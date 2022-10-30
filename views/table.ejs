@@ -1,0 +1,89 @@
+<h1 style="text-align: center;">Zápis</h1>
+
+<form action="/zapis" method="post" >
+  
+<table>
+  <tr>
+    <th style="width: 1%">Třída</th>
+    <th style="width: 1%">Datum</th>
+    <th style="width: 1%">Hodina</th>
+    <th style="width: 1%">Předmět</th>
+    <th style="width: 1%">Počet odučených hodin předmětu od začátku školního roku</th>
+    <th style="width: 3%">Probrané učivo</th>
+    <th style="width: 1%">Podpis vyučujícího</th>
+  </tr>
+  <tr>
+    <td><label for="trida"></label>
+
+      <select name="trida">
+        <option name="A1a" value="A1a">A1a</option>
+        <option value="A1b">A1b</option>
+        <option value="E1">E1</option>
+        <option value="C1a">C1a</option>
+        <option value="C1b">C1b</option>
+        <option value="C1c">C1c</option>
+        <option value="A2a">A2a</option>
+        <option value="A2b">A2b</option>
+        <option value="E2">E2</option>
+        <option value="C2a">C2a</option>
+        <option value="C2b">C2b</option>
+        <option value="C2c">C2c</option>
+        <option value="A3a">A3a</option>
+        <option value="A3b">A3b</option>
+        <option value="E3">E3</option>
+        <option value="C3a">C3a</option>
+        <option value="C3b">C3b</option>
+        <option value="C3c">C3c</option>
+        <option value="A4a">A4a</option>
+        <option value="A4b">A4b</option>
+        <option value="E4">E4</option>
+        <option value="C4a">C4a</option>
+        <option value="C4b">C4b</option>
+        <option value="C4c">C4c</option>
+      </select>
+    </td>
+    <td><input type="date" value="<%=date %>" name="datum" >
+    <td> <label for="hodina"></label>
+
+      <select name="hodina">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </td>
+    <td><label for="Hodina"></label>
+
+      <select  name="predmet">
+        <option value="anglický jazyk">anglický jazyk</option>
+        <option value="matematika">matematika</option>
+        <option value="matematika">český jazyk</option>
+        <option value="informační technologie">informační technologie</option>
+        <option value="tělocvik">tělesná výchova</option>
+      </select>
+    </td>
+    <td><input type="number" name ="oducHod"></td>
+    <td><input type="text" style="width: 90%" name="probrUc"></td>
+    <td><input type="text" name="podpis"></td>
+ 
+  </tr>
+</table>
+
+
+
+<h1 style="text-align: center;">Absence</h1>
+
+
+ <%- include('absence') -%>
+  
+
+<button  class="odeslat" type="button" value="1">+</button>
+<br>
+<button  class="odeslat" class="odeslat" type="submit">Odeslat</button>
+</form>
